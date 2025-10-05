@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Haibo Tong - Portfolio MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Sticky Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-brain"></i>
+                    <span>Haibo Tong</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Haibo Tong</h1>
+                <p class="hero-subtitle">MS CS Student at UIUC | AI Safety & Multimodal LLMs Researcher</p>
+                <button class="cta-button" onclick="openModal('hero-modal')">Learn More About My Research</button>
+            </div>
+            <div class="hero-video">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a first-year Master's student in Computer Science at the University of Illinois at Urbana-Champaign (UIUC), advised by Prof. Bo Li in the Secure Learning Lab.</p>
+                        <p>Previously, I received my Bachelor's degree in Computer Engineering from Shanghai Jiao Tong University. My research focuses on multimodal large language models, AI safety, and AI agents.</p>
+                        <p>I am particularly interested in developing safe, efficient, and practical multimodal agents that can effectively interact with and understand the world through multiple modalities.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/image.jpg" alt="Haibo Tong">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas Section with Multi-column -->
+        <section id="research" class="services">
+            <div class="container">
+                <h2 class="section-title">Research Areas</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>Multimodal LLMs</h3>
+                        <p>Developing large language models that can process and understand multiple types of data including text, images, and video.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>AI Safety</h3>
+                        <p>Ensuring AI systems are reliable, interpretable, and aligned with human values through robust safety mechanisms.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>AI Agents</h3>
+                        <p>Building intelligent agents that can learn from observations and knowledge to interact effectively with their environment.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-check-double"></i>
+                        <h3>Trustworthy ML</h3>
+                        <p>Creating machine learning systems with external constraints grounded in human knowledge for compliance and certifiability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Carousel Section -->
+        <section id="projects" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <div class="slide-content">
+                                <h3>Multimodal Agent Framework</h3>
+                                <p>A comprehensive framework for building and evaluating multimodal AI agents with safety constraints.</p>
+                                <img src="assets/image.jpg" alt="Project 1">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>AI Safety Benchmarks</h3>
+                                <p>Development of benchmarks and evaluation metrics for assessing AI system safety and alignment.</p>
+                                <img src="assets/image.jpg" alt="Project 2">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Vision-Language Models</h3>
+                                <p>Research on improving vision-language understanding in large multimodal models.</p>
+                                <img src="assets/image.jpg" alt="Project 3">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background Image Section -->
+        <section class="background-section">
+            <div class="background-content">
+                <h2>Building Safe & Capable AI</h2>
+                <p>Contributing to the development of AI systems that are powerful, reliable, and aligned with human values</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <span>University of Illinois at Urbana-Champaign</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Urbana-Champaign, IL</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>haibot2@illinois.edu</span>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://github.com/EchoRaven" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com" class="social-link" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://echoraven.github.io/Haibo.github.io/" class="social-link" target="_blank"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Haibo Tong. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div id="hero-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('hero-modal')">&times;</span>
+                <h2>My Research Vision</h2>
+                <p>My research aims to build capable, safe, and trustworthy AI agents that learn from both observations and knowledge. I explore this through two pathways:</p>
+                <p><strong>1. Internal Intelligence:</strong> Strengthening their intelligence and alignment by bootstrapping from experience and hindsight.</p>
+                <p><strong>2. External Constraints:</strong> Applying constraints grounded in human knowledge to achieve compliance and certifiability.</p>
+                <p>The long-term goal is to contribute to AI systems that are not only powerful but also reliable, interpretable, and aligned with human values.</p>
+                <button class="modal-button" onclick="closeModal('hero-modal')">Close</button>
+            </div>
+        </div>
+    </body>
+</html>
